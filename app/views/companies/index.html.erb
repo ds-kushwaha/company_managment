@@ -1,0 +1,30 @@
+<h1>Companies List</h1>
+
+<table>
+  <tr>
+    <th>Company</th>    
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>    
+    <th colspan="5"></th>
+  </tr>
+ 
+  <% @company.each do |c| %>
+    <tr>
+      
+      <td><%= c.company_name %></td>      
+      <td><%= c.city.city_name %></td>
+      <td><%= c.state.state_name %></td>
+      <td><%= c.country.country_name %></td>
+      <td><%= link_to 'Show', company_path(c) %></td>
+      <td><%= link_to 'Edit', edit_company_path(c) %></td>
+      <td><%= link_to 'Delete', company_path(c) ,
+                method: :delete,
+                data: { confirm: 'Are you sure?'} %></td>
+    </tr>
+         
+    <% end %>
+ </table><br>
+      <%= link_to 'Enter New City', new_company_path %> <br>
+      <br>
+      <%= link_to 'Back to Main Menu', welcome_index_path %>

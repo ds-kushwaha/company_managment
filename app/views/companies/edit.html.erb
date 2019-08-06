@@ -1,0 +1,32 @@
+<h1>Edit Companies</h1>
+ <%= form_with model: @company, scope: :company, url: company_path(@company), local: true do |form| %>
+
+ <% if @company.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@company.errors.count, "error") %> prohibited
+        this company from being saved:
+      </h2>
+      <ul>
+        <% @company.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+    <p>
+    <%= form.label :company %><br>
+    <%= form.text_field :company_name %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+ 
+<% end %>
+ 
+<p>
+  <strong>Title:</strong>
+  <%= @company.company_name %>
+</p>

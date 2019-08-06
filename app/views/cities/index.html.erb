@@ -1,0 +1,27 @@
+<h1>Cities List</h1>
+
+<table>
+  <tr>
+    <th>City</th>
+    <th>State</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+  <% @city.each do |c| %>
+    <tr>
+      <td><%= c.city_name %></td>
+      <td><%= c.state.state_name %></td>
+
+      <td><%= link_to 'Show', city_path(c) %></td>
+
+      <td><%= link_to 'Edit', edit_city_path(c) %></td>
+      <td><%= link_to 'Delete', city_path(c) ,
+                method: :delete,
+                data: { confirm: 'Are you sure?'} %></td>
+          </tr>
+         
+        <% end %>
+      </table><br>
+      <%= link_to 'Enter New City', new_city_path %> <br>
+      <br>
+      <%= link_to 'Back to Main Menu', welcome_index_path %>

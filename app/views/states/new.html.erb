@@ -1,0 +1,21 @@
+<h1>State Master</h1>
+
+
+<%= form_for @state do |form| %>
+  <p>
+    <%= form.label :State_name %><br>
+    <%= form.text_field :state_name %>
+  </p>
+
+  <p>
+    <%= form.label :country %><br>
+    <%#= form.text_field :country_id %>
+    <%= form.collection_select :country_id, Country.order(:country_name),:id,:country_name, include_blank: true %>
+
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+  <%= link_to 'Back to Main Menu', welcome_index_path %>
+<% end %>
