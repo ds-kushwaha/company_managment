@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :states
   resources :cities 
   resources :companies
+  resources :users
 
   root 'welcome#index'
 

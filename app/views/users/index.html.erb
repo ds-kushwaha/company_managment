@@ -1,0 +1,27 @@
+<h1>Users List</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Company</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+  <% @user.each do |c| %>
+    <tr>
+      <td><%= c.user_name %></td>
+      <td><%= c.company.company_name %></td>
+
+      <td><%= link_to 'Show', user_path(c) %></td>
+
+      <td><%= link_to 'Edit', edit_user_path(c) %></td>
+      <td><%= link_to 'Delete', user_path(c) ,
+                method: :delete,
+                data: { confirm: 'Are you sure?'} %></td>
+          </tr>
+         
+        <% end %>
+      </table><br>
+      <%= link_to 'Enter New user', new_user_path %> <br>
+      <br>
+      <%= link_to 'Back to Main Menu', welcome_index_path %>

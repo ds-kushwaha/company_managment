@@ -1,3 +1,5 @@
+before_action :authenticate_user!
+
 
 
 <div style="text-align: center;">
@@ -25,6 +27,12 @@
 
 <br>
 <%= link_to 'Update/Delete Company', companies_path %> <br>
+
+<br>
+<%= link_to 'Enter New User', new_user_path %> <br>
+
+<br>
+<%= link_to 'Update/Delete User', users_path %> <br>
 
 
 

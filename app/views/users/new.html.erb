@@ -1,0 +1,27 @@
+<h1>User Master</h1>
+
+
+<%= form_for @user do |form| %>
+  <p>
+    <%= form.label :User_name %><br>
+    <%= form.text_field :user_name %>
+  </p>
+
+  <p>
+    <%= form.label :Mobile_No %><br>
+    <%= form.text_field :mobno %>
+  </p>
+
+
+  <p>
+    <%= form.label :company %><br>
+    <%#= form.text_field :state_id %>
+    <%= form.collection_select :company_id, Company.order(:company_name),:id,:company_name, include_blank: true %>
+
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+  <%= link_to 'Back to Main Menu', welcome_index_path %>
+<% end %>

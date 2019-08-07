@@ -19,6 +19,12 @@
     <%= form.collection_select :country_id, Country.order(:country_name),:id,:country_name, include_blank: true %>
 
   </p>
+
+   <p>
+    <%= form.label :start_date %><br>
+    <%= form.date_field :start_date %>
+  </p>
+
  
   <p>
     <%= form.submit %>
