@@ -1,0 +1,14 @@
+<h1>Role Master</h1>
+
+
+<%= form_for @role do |form| %>
+  <p>
+    <%= form.label :Role_name %><br>
+    <%= form.text_field :role_name %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+  <%= link_to 'Back to Main Menu', welcome_index_path %>
+<% end %>

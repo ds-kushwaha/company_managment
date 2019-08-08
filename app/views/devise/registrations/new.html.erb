@@ -21,6 +21,51 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name, autofocus: true, autocomplete: "last_name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Company%><br />
+    <%= f.collection_select :company_id, Company.order(:company_name),:id,:company_name, include_blank: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Role %><br />
+       <%= f.collection_select :role_id, Role.order(:role_name),:id,:role_name, include_blank: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Start_date %><br />
+    <%= f.datetime_field :start_date, autofocus: true, autocomplete: "start_date" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :End_date %><br />
+    <%= f.datetime_field :end_date, autofocus: true, autocomplete: "end_date" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Monthly_charge %><br />
+    <%= f.number_field :monthly_charge, autofocus: true, autocomplete: "monthly_charge" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Image %><br />
+    <%= f.file_field :image, autofocus: true, autocomplete: "image" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :active %><br />
+    <%= f.check_box :active, autofocus: true, autocomplete: "active" %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>

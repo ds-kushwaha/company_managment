@@ -1,22 +1,22 @@
 
 <p>
   <strong>Company:</strong>
-  <%= @Company.company_name %>
+  <%= @company.company_name %>
 </p>
 
 <p>
-  <strong>Company:</strong>
-  <%= @Company.city.city_name %>
+  <strong>City:</strong>
+  <%= @company.city.city_name %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @company.state.state_name %>
 </p>
 
 <p>
   <strong>Country:</strong>
-  <%= @Company.state.state_name %>
-</p>
-
-<p>
-  <strong>Company:</strong>
-  <%= @Company.country.country_name %>
+  <%= @company.country.country_name %>
 </p>
 
 <%= link_to 'Back', new_company_path %>

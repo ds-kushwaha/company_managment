@@ -1,0 +1,23 @@
+<h1>Role</h1>
+
+<table>
+  <tr>
+    <th>Role</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+  <% @role.each do |c| %>
+    <tr>
+      <td><%= c.role_name %></td>
+      <td><%= link_to 'Show', role_path(c) %></td>
+      <td><%= link_to 'Edit', edit_role_path(c) %></td>
+      <td><%= link_to 'Delete', role_path(c) ,
+              method: :delete,
+              data: { confirm: 'Are you sure?'} %></td>
+    </tr>
+   
+  <% end %>
+</table><br>
+<%= link_to 'Enter New role', new_role_path %> <br>
+<br>
+<%= link_to 'Back to Main Menu', welcome_index_path %>

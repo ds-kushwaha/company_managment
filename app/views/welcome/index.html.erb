@@ -1,5 +1,3 @@
-before_action :authenticate_user!
-
 
 
 <div style="text-align: center;">
@@ -28,15 +26,29 @@ before_action :authenticate_user!
 <br>
 <%= link_to 'Update/Delete Company', companies_path %> <br>
 
-<br>
-<%= link_to 'Enter New User', new_user_path %> <br>
+</div>
+
+<div style="text-align: left;">
+ <%#= link_to 'Sign up New Users', new_user_registration_path %> 
+<%#= link_to 'Sign in ', new_user_session_path %> 
+
+<td><%= link_to 'Signout', destroy_user_session_path,
+          method: :delete
+          %></td>
+</div>
+
+<div style="text-align: center;">
+
+
+	<br>
+ <%= link_to 'Enter New Role', new_role_path %> <br>
+
+	<br>
+ <%= link_to 'Update/Delete Role', roles_path %> <br>
 
 <br>
-<%= link_to 'Update/Delete User', users_path %> <br>
-
+<%= link_to 'Current User', user_profile_path %> <br>
+<br>
 
 
 </div>
-
-
-
