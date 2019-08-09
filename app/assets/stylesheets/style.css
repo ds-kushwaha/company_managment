@@ -238,7 +238,7 @@
     text-align: center;
 }
 .fr__product__inner h4 a {
-    color: #444;
+    color: red;
     font-family: Old Standard TT;
     font-size: 17px;
     font-weight: 600;
@@ -471,7 +471,7 @@
     margin-top: 7px;
 }
 .product__details h2 {
-    color: #444;
+    color: red;
     font-family: Old Standard TT;
     font-size: 16px;
     font-weight: 600;
@@ -1135,7 +1135,7 @@
     min-width: 180px;
 }
 .htc__best__product__details h2 {
-    color: #444;
+    color: red;
     font-family: "Old Standard TT",serif;
     font-size: 17px;
     font-weight: 600;
@@ -1462,7 +1462,7 @@
     text-transform: uppercase;
 }
 .ht__cat__list li a {
-    color: #444;
+    color: red;
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
@@ -1518,7 +1518,7 @@
     display: flex;
 }
 .ht__size__list li a {
-    color: #444;
+    color: red;
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
@@ -1542,7 +1542,7 @@
     margin-right: -5px;
 }
 .ht__tag__list li a {
-    color: #444;
+    color: red;
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
@@ -1566,7 +1566,7 @@
     margin-top: 31px;
 }
 .htc__compare__list li a {
-    color: #444;
+    color: red;
     font-size: 16px;
     font-weight: 600;
     line-height: 23px;
@@ -1692,7 +1692,7 @@
     width: 100%;
 }
 .htc__list__details h2 {
-    color: #444;
+    color: red;
     font-family: Old Standard TT;
     font-size: 19px;
     font-weight: 600;
@@ -1837,7 +1837,7 @@ select.ht__select {
     border: 1px solid #c43b68;
 }
 .ht__product__dtl h2 {
-    color: #444;
+    color: red;
     font-family: Old Standard TT;
     font-size: 20px;
     font-weight: 600;
@@ -2106,7 +2106,7 @@ select.select__size {
     font-weight: 600;
 }
 .table-content table td.product-name a {
-    color: #444;
+    color: red;
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
@@ -2900,7 +2900,7 @@ a.shipping-calculator-button:hover{
     font-weight: 700;
 }
 .wishlist-table table .wishlist-in-stock {
-    color: #444;
+    color: red;
 }
 .wishlist-table table .product-add-to-cart > a {
     background: #252525 none repeat scroll 0 0;

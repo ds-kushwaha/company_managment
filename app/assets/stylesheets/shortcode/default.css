@@ -720,28 +720,28 @@ input [type="email"]:focus::-moz-placeholder{
 
 
 input::-webkit-input-placeholder { / Chrome/Opera/Safari /
-  color: #444;
+  color: red;
   opacity: 1;
 }
 input::-moz-placeholder { / Firefox 19+ /
-  color: #444;
+  color: red;
   opacity: 1;
 }
 input:-ms-input-placeholder { / IE 10+ /
-  color: #444;
+  color: red;
   opacity: 1;
 }
 
 textarea::-webkit-input-placeholder { / Chrome/Opera/Safari /
-  color: #444;
+  color: red;
   opacity: 1;
 }
 textarea::-moz-placeholder { / Firefox 19+ /
-  color: #444;
+  color: red;
   opacity: 1;
 }
 textarea:-ms-input-placeholder { / IE 10+ /
-  color: #444;
+  color: red;
   opacity: 1;
 }
 
