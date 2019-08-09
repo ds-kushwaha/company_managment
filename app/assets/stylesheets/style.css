@@ -145,7 +145,7 @@
 .section__title::before {
     background: rgba(0, 0, 0, 0) url("images/others/shape/3.png") repeat scroll 0 0 / cover ;
     bottom: 0;
-    content: "";
+    
     height: 160px;
     left: 0;
     position: absolute;
@@ -173,7 +173,7 @@
 }
 .title__border::before {
     background: #ebebeb none repeat scroll 0 0;
-    content: "";
+    
     height: 3px;
     position: absolute;
     right: 10%;
@@ -216,7 +216,7 @@
 .cat__hover__inner::before {
     background: rgba(0, 0, 0, 0) url("images/others/shape/4.png") repeat scroll 0 0 / cover ;
     bottom: 0;
-    content: "";
+    
     height: 160px;
     left: 0;
     position: absolute;
@@ -512,7 +512,7 @@
 .ht__show__more__btn a::before {
     background: #333333 none repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 4px;
     position: absolute;
     transition: all 0.4s ease 0s;
@@ -553,7 +553,7 @@
 .testimonial__thumb::before {
     background: #252525 none repeat scroll 0 0;
     bottom: -7px;
-    content: "";
+    
     height: 3px;
     left: 50%;
     position: absolute;
@@ -638,7 +638,7 @@
 .bl__date span::before {
     background: #000000 none repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 3px;
     left: 0;
     position: absolute;
@@ -728,7 +728,7 @@
 }
 .htc__service__area::before {
     background: #36b997 none repeat scroll 0 0;
-    content: "";
+    
     height: 1px;
     position: absolute;
     top: 45%;
@@ -762,7 +762,7 @@
 .service__details h2::before {
     background: #000000 none repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 15px;
     left: 50%;
     position: absolute;
@@ -847,7 +847,7 @@
 .ht__promo__details h2::before {
     background: #fff none repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 3px;
     left: 0;
     position: absolute;
@@ -864,7 +864,7 @@
 .ht__promo__details h4::before {
     background: #fff none repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 3px;
     position: absolute;
     width: 100%;
@@ -961,7 +961,7 @@
 .ht__promo__inner h2::before {
     background: #343434 none repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 3px;
     position: absolute;
     width: 100%;
@@ -969,7 +969,7 @@
 .ht__promo__inner h4::before {
     background: #000000 none repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 3px;
     position: absolute;
     width: 100%;
@@ -1050,7 +1050,7 @@
 .ht__about__inner h2 span::before {
     background: #000 none repeat scroll 0 0;
     bottom: 9px;
-    content: "";
+    
     height: 4px;
     position: absolute;
     width: 100%;
@@ -1086,7 +1086,7 @@
 .ht__bann__details p span::before {
     background: #fff none repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 3px;
     position: absolute;
     width: 100%;
@@ -1101,7 +1101,7 @@
 }
 .banner--2::before {
     background: #fff none repeat scroll 0 0;
-    content: "";
+    
     height: 386px;
     left: 50%;
     opacity: 1;
@@ -1267,7 +1267,7 @@
 }
 .ht__intrac__details::before {
     background: #c43b68 none repeat scroll 0 0;
-    content: "";
+    
     height: 386px;
     left: 50%;
     position: absolute;
@@ -1333,7 +1333,7 @@
 .htc__fashion__icon__inner h2::before {
     background: #c43b68 none repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 3px;
     position: absolute;
     width: 100%;
@@ -1444,7 +1444,7 @@
 .title__line--3::before {
     background: rgba(0, 0, 0, 0) url("images/others/shape/5.png") no-repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 4px;
     position: absolute;
     width: 100%;
@@ -3168,7 +3168,7 @@ ul.htc__instagram__posts.owl-carousel li img {
 
 .htc__instagram__area ul li a:before{
     position: absolute;
-    content: "";
+    
     left: 0;
     background-color: #c43b68;
     top: 0;

@@ -168,7 +168,7 @@
 .cd-headline.loading-bar .cd-words-wrapper::after {
   background: #4c8bf5 none repeat scroll 0 0;
   bottom: 0;
-  content: "";
+  
   height: 3px;
   left: 0;
   position: absolute;
@@ -207,7 +207,7 @@
   position: relative;
 }
 .arrow-down-long:before {
-    content: "";
+    
     height: 90px;
     background: url(../../images/icons/arrow-down-long.png);
     width: 15px;
@@ -222,4 +222,3 @@
 }
 .slider__activation__wrap--5 .single-slide:focus{
   outline: none;}
-}

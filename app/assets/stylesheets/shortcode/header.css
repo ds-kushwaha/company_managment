@@ -250,7 +250,7 @@ nav.off__canvars--menu ul li ul li a:hover {
 }
 .header__search a::before {
   background: #898989;
-  content: "";
+  
   height: 15px;
   position: absolute;
   right: 0;
@@ -269,7 +269,7 @@ nav.off__canvars--menu ul li ul li a:hover {
 }
 .header__account a::before {
     background: #898989 none repeat scroll 0 0;
-    content: "";
+    
     height: 15px;
     position: absolute;
     right: 0;
@@ -405,7 +405,7 @@ nav.off__canvars--menu ul li ul li a:hover {
 .dropdown.mega_dropdown li a.mega__title::before {
     background: #000 none repeat scroll 0 0;
     bottom: 0;
-    content: "";
+    
     height: 1px;
     left: 0;
     position: absolute;
@@ -775,7 +775,7 @@ nav.off__canvars--menu ul li ul li a:hover {
     margin-top: 7px;
 }
 h4.offset__title {
-    color: red444;
+    color: red;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -850,7 +850,7 @@ h4.offset__title {
 }
 .sidebar__thumd > li a::before {
     background: #c43b68  none repeat scroll 0 0;
-    content: "";
+    
     height: 100%;
     opacity: 0;
     position: absolute;

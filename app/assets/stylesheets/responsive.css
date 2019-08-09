@@ -917,7 +917,7 @@ nav.off__canvars--menu ul li {
  
 .slider--two .single__slide::before {
   background: #fff none repeat scroll 0 0;
-  content: "";
+  
   height: 100%;
   left: 0;
   position: absolute;

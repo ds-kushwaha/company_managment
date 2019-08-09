@@ -38,7 +38,7 @@
 }
 .ft__title h4::before {
     background: #d4d4d4 none repeat scroll 0 0;
-    content: "";
+    
     height: 2px;
     left: 0;
     position: absolute;
@@ -268,7 +268,7 @@
     background-origin: padding-box;
     background-repeat: no-repeat;
     background-size: cover;
-    content: "";
+    
     height: 13px;
     left: 20px;
     position: absolute;
