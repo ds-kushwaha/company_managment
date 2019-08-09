@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+ button, input, optgroup, select, textarea {
+    color: #000;
+    font: inherit;
+    margin: 0;
+}
+
+#htc__header{
+	background-color: aquamarine;
+}
+
+body {
+	background-color: #fff!important;
+	color: #000!important;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	color: #000!important;
+}

@@ -20,7 +20,6 @@ class StatesController < ApplicationController
 
   def create
     @state = State.new(state_params)
-   # byebug
     if @state.save
     redirect_to states_path
   else 
@@ -39,7 +38,7 @@ class StatesController < ApplicationController
   end			
 
   def destroy
-  	@state = State.find(params[:id])
+  	  @state = State.find(params[:id])
       @state.destroy
       redirect_to states_path
   end	

@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nnt</title>
+    <title>nnt</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,9 +11,19 @@
   </head>
 
   <body>
+    <div class="wrapper">
+   <%= render 'layouts/header'%>
     <%= yield %>
+  <%= render 'layouts/footer'%>
+  </div>
   </body>
 </html>
 
 <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
+
+<style type="text/css">
+  body{
+    background-color: #8b91b3;
+  }
+</style>

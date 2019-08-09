@@ -1,27 +1,40 @@
-<h1>Cities List</h1>
+<!--       <h1>City</h1> -->
+      <div class="container">
+           
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>City</th>
+              <th>State</th>
+              <th>Show</th>
+               <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+             <% @city.each do |c| %>
+            <tr>
+              <td><%= c.city_name %></td>
+              <td><%= c.state.state_name %></td>
+              <td><%= link_to 'Show', city_path(c) %></td>
+              <td><%= link_to 'Edit', edit_city_path(c) %></td>
+              <td><%= link_to 'Delete', city_path(c) ,
+                      method: :delete,
+                      data: { confirm: 'Are you sure?'} %></td>
+            </tr>
+             <% end %>
+          </tbody>
+        </table>
+      </div>
+      <div style="text-align: center;">
+        <%= link_to 'Enter New City', new_city_path, :class=>"btn btn-success" %> <br>
+        <br>
+        <%= link_to 'Back to Main Menu', welcome_index_path, :class=>"btn btn-primary" %>
+      </div>
 
-<table>
-  <tr>
-    <th>City</th>
-    <th>State</th>
-    <th colspan="2"></th>
-  </tr>
- 
-  <% @city.each do |c| %>
-    <tr>
-      <td><%= c.city_name %></td>
-      <td><%= c.state.state_name %></td>
 
-      <td><%= link_to 'Show', city_path(c) %></td>
-
-      <td><%= link_to 'Edit', edit_city_path(c) %></td>
-      <td><%= link_to 'Delete', city_path(c) ,
-                method: :delete,
-                data: { confirm: 'Are you sure?'} %></td>
-          </tr>
-         
-        <% end %>
-      </table><br>
-      <%= link_to 'Enter New City', new_city_path %> <br>
-      <br>
-      <%= link_to 'Back to Main Menu', welcome_index_path %>
+<!--  <style type="text/css">
+        table.table-bordered {
+        margin-top: -46px;
+        }
+      </style> -->

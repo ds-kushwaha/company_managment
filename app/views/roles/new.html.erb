@@ -1,14 +1,47 @@
-<h1>Role Master</h1>
+<!-- <div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+  	<h1>Role Master</h1>
+  	<%= form_for @role do |form| %>
+  	  <p>
+  	    <%= form.label :Role_name %><br>
+  	    <%= form.text_field :role_name %>
+  	  </p>
+  	  <p>
+  	    <%= form.submit %>
+  	  </p>
+  	  <%= link_to 'Back to Main Menu', welcome_index_path %>
+  	<% end %>
+  </div>
+  <div class="col-md-4"></div>
+</div> -->
 
 
-<%= form_for @role do |form| %>
-  <p>
-    <%= form.label :Role_name %><br>
-    <%= form.text_field :role_name %>
-  </p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">      
+     <!--  <h2>Vertical (basic) form</h2> -->
+        <%= form_for @role do |form| %>
+    <div class="form-group">
+      <label for="email">Role:</label>
+      <input type="text" class="form-control" id="role_role_name" placeholder="Enter role" name="role[role_name]">
+    </div>
+    <div class="form-group">
+
+      <%#= form.collection_select :company_id, Country.order(:country_name),:id,:country_name, include_blank: true, {:prompt => 'Select Country'} %>
+      <%#= select("post", "person_id", Person.all.collect {|p| [ p.name, p.id ] }, {:prompt => 'Select Person'})%>
+
+    
+    </div>
  
-  <p>
-    <%= form.submit %>
-  </p>
-  <%= link_to 'Back to Main Menu', welcome_index_path %>
-<% end %>
+    <button type="submit" class="btn btn-primary">Submit</button>
+   <% end %> 
+</div>
+<div class="col-md-3"></div>
+    </div>
+  </div>
+  
+
+<br><br><br>

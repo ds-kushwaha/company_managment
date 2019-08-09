@@ -1,21 +1,28 @@
-<h1>State Master</h1>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">      
+     <!--  <h2>Vertical (basic) form</h2> -->
+        <%= form_for @state do |form| %>
+    <div class="form-group">
+      <label for="email">State:</label>
+      <input type="text" class="form-control" id="state_state_name" placeholder="Enter State" name="state[state_name]">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Country:</label>
+      <%#= form.collection_select :country_id, Country.order(:country_name),:id,:country_name, include_blank: true, {:prompt => 'Select Country'} %>
+      <%#= select("post", "person_id", Person.all.collect {|p| [ p.name, p.id ] }, {:prompt => 'Select Person'})%>
 
-<%= form_for @state do |form| %>
-  <p>
-    <%= form.label :State_name %><br>
-    <%= form.text_field :state_name %>
-  </p>
-
-  <p>
-    <%= form.label :country %><br>
-    <%#= form.text_field :country_id %>
-    <%= form.collection_select :country_id, Country.order(:country_name),:id,:country_name, include_blank: true %>
-
-  </p>
+      <%= form.select(:country_id, Country.all.map{|c| [c.country_name, c.id]}, {include_blank: "Select Country"}, { :class => 'form-control' }) %>
+    </div>
  
-  <p>
-    <%= form.submit %>
-  </p>
-  <%= link_to 'Back to Main Menu', welcome_index_path %>
-<% end %>
+    <button type="submit" class="btn btn-primary">Submit</button>
+   <% end %> 
+</div>
+<div class="col-md-3"></div>
+    </div>
+  </div>
+  
+
+<br><br><br>

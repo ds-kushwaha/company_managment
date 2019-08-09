@@ -1,4 +1,4 @@
-<h1>Role</h1>
+<!-- <h1>Role</h1>
 
 <table>
   <tr>
@@ -21,3 +21,43 @@
 <%= link_to 'Enter New role', new_role_path %> <br>
 <br>
 <%= link_to 'Back to Main Menu', welcome_index_path %>
+
+ -->
+
+
+
+
+
+ <!-- <h1>States</h1>  --> 
+<div class="container">
+           
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Role</th>
+   
+        <th>Show</th>
+         <th>Edit</th>
+          <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+       <% @role.each do |c| %>
+      <tr>
+        <td><%= c.role_name %></td>
+
+        <td><%= link_to 'Show', role_path(c) %></td>
+        <td><%= link_to 'Edit', edit_role_path(c) %></td>
+        <td><%= link_to 'Delete', role_path(c) ,
+                method: :delete,
+                data: { confirm: 'Are you sure?'} %></td>
+      </tr>
+       <% end %>
+    </tbody>
+  </table>
+</div>
+<div style="text-align: center;">
+  <%= link_to 'Enter New State', new_role_path, :class=>"btn btn-success" %> <br>
+      <br>
+  <%= link_to 'Back to Main Menu', welcome_index_path, :class=>"btn btn-primary" %>
+</div>

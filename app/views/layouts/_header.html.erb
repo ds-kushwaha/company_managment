@@ -1,0 +1,90 @@
+      <p class="navbar-text pull-right">
+<% if user_signed_in? %>
+    Logged in as <strong><%= current_user.email %></strong>.
+    <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+    <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+    <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+  <% end %>
+</p>
+      <header id="htc__header" class="htc__header__area header--one">
+            <!-- Start Mainmenu Area -->
+            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+                <div class="container">
+                    <div class="row">
+                        <div class="menumenu__container clearfix">
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
+                                <div class="logo">
+                           <a href="#"><img src="<%= asset_path 'logo/aaaa.png' %>" alt="logo images"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
+                                <nav class="main__menu__nav hidden-xs hidden-sm">
+                                    <ul class="main__menu">
+                                        <li class="drop"><a href="/">Home</a></li>
+                                        <li class="drop"><a href="#">Country</a>
+                                            <ul class="dropdown">
+                                                <li><a href="<%= new_country_path%>">Add New</a></li>
+                                                <li><a href="<%= countries_path %>">Show all</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop"><a href="#">State</a>
+                                            <ul class="dropdown">
+                                                <li><a href="<%= new_state_path%>">Add New</a></li>
+                                                <li><a href="<%= states_path %>">Show all</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop"><a href="#">City</a>
+                                            <ul class="dropdown">
+                                                <li><a href="<%= new_city_path%>">Add New</a></li>
+                                                <li><a href="<%= cities_path%>">Show all</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop"><a href="blog.html">Company</a>
+                                            <ul class="dropdown">
+                                                <li><a href="<%= new_company_path%>">Add new</a></li>
+                                                <li><a href="<%= companies_path%>">Show all</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop"><a href="#">Role</a>
+                                            <ul class="dropdown">
+                                                <li><a href="<%= new_role_path%>">Add new</a></li>
+                                                <li><a href="<%= roles_path%>">Show all</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul>
+                                </nav>
+
+                                <div class="mobile-menu clearfix visible-xs visible-sm">
+                                    <nav id="mobile_dropdown">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="blog.html">blog</a></li>
+                                            <li><a href="#">pages</a>
+                                                <ul>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                    <li><a href="cart.html">Cart page</a></li>
+                                                    <li><a href="checkout.html">checkout</a></li>
+                                                    <li><a href="contact.html">contact</a></li>
+                                                    <li><a href="product-grid.html">product grid</a></li>
+                                                    <li><a href="product-details.html">product details</a></li>
+                                                    <li><a href="wishlist.html">wishlist</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="mobile-menu-area"></div>
+                </div>
+            </div>
+            <!-- End Mainmenu Area -->
+        </header>
