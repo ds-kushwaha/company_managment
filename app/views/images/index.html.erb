@@ -1,0 +1,33 @@
+<!--       <h1>image</h1> -->
+      <div class="container">
+           
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Company</th>
+              <th>Show</th>
+               <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+             <% @images.each do |c| %>
+            <tr>
+              <td><%= c.image_name %></td>
+              <td><%= c.company.company_name %></td>
+              <td><%= link_to 'Show', image_path(c) %></td>
+              <td><%= link_to 'Edit', edit_image_path(c) %></td>
+              <td><%= link_to 'Delete', image_path(c) ,
+                      method: :delete,
+                      data: { confirm: 'Are you sure?'} %></td>
+            </tr>
+             <% end %>
+          </tbody>
+        </table>
+      </div>
+      <div style="text-align: center;">
+        <%= link_to 'Enter New image', new_image_path, :class=>"btn btn-success" %> <br>
+        <br>
+        <%= link_to 'Back to Main Menu', welcome_index_path, :class=>"btn btn-primary" %>
+      </div>

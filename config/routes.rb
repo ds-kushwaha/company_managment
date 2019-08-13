@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   get '/profile' => 'welcome#user_profile', as: :user_profile
   devise_for :users
   get 'welcome/index'
@@ -6,8 +8,7 @@ Rails.application.routes.draw do
   resources :states
   resources :cities 
   resources :companies
-  resources :roles
-
+  resources :images
 
   root 'welcome#index'
 

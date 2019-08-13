@@ -11,12 +11,15 @@
 
 <p>
   <strong>State:</strong>
-  <%= @company.state.state_name %>
+  <%= @company.city.state.state_name %>
 </p>
 
 <p>
   <strong>Country:</strong>
-  <%= @company.country.country_name %>
+  <%= @company.city.state.country.country_name %>
 </p>
-
+<% @company.images.each do |p| %>
+ <%= image_tag p.image_name.url, size: '200x200' %>
+  
+<% end %>
 <%= link_to 'Back', new_company_path %>
