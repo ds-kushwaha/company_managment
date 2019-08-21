@@ -2,7 +2,6 @@ class UsersController < ApplicationController
 
 	  def new
 	    @user = User.new
-	   
 	  end
 
 	  def edit
@@ -33,7 +32,8 @@ class UsersController < ApplicationController
 	  	else 
 	  	  render 'edit'  
 	  	end
-	  end			
+	  end	
+	  		
 	  def destroy
 	  	@user = User.find(params[:id])
 	    @user.destroy
